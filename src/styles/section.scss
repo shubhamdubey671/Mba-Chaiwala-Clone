@@ -16,16 +16,21 @@
 
   h3 {
     width: 80%;
+    padding: 1rem;
+
     font: 300 54px $heading;
   }
 
   p {
     font-size: 19px;
     font-family: $text;
+    padding: 1rem;
     line-height: 1.9;
   }
 
   button {
+
+    padding: 1rem;
     font: 600 14px $text;
     padding: 0.9rem 1.25rem;
     border: none;

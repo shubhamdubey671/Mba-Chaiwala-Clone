@@ -1,5 +1,7 @@
 import IntroVideo from "./components/IntroVideo";
 import Section from "./components/Section";
+import Footer from "./components/Footer";
+import Misc from "./components/Misc";
 import data from "./data/data.json";
 
 import freshTopicImg from "./assets/academy.png";
@@ -16,6 +18,9 @@ import "./styles/intro.scss";
 import "./styles/app.scss";
 import "./styles/color.scss";
 import "./styles/section.scss";
+import "./styles/footer.scss";
+import "./styles/misc.scss";
+import "./styles/mediaquery.scss";
 
 const yellow = "#fff100",
   pink = "#ed1e79",
@@ -146,9 +151,8 @@ function App() {
         btnBgColor={brown}
         btnColor={yellow}
       />
-
-
-
+      <Footer/>
+      <Misc/>
     </>
      
    
