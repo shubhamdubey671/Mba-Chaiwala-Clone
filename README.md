@@ -1,5 +1,5 @@
 ## --> [Link](https://mba-chaiwalaa-clone-shubhamdubey671.vercel.app/)
-- [@octokatherine](https://www.github.com/octokatherine)
+
 
 # Getting Started with Create React App
 
