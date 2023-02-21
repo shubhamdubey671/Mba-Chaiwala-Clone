@@ -56,6 +56,7 @@ const Section = ({
     },
     transition: {
       delay: 0.3,
+      ease: "easeIn",
     },
   };
 
@@ -74,7 +75,7 @@ const Section = ({
           data-cursorpointer={true}
           {...headingOptions}
         >
-          {h3}
+          {h3  }
         </motion.h3>
 
         <motion.p

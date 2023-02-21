@@ -1,4 +1,8 @@
+@import "color";
+
+
 @media screen and (max-aspect-ratio: 13/10) {
+
     .intro {
       height: 100vh;
       video {
@@ -13,12 +17,53 @@
   }
   
   @media screen and (max-width: 820px) {
+
+    .lastLine{
+    width: 80vw;
+    font: 500 12px $text;
+    color: $pink;
+    letter-spacing: 1.6px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    bottom: 8%;
+    display: flex;
+   justify-content: center;
+    }
+    .credit{
+      width: 80vw;
+    font: 500 12px $text;
+    color: $pink;
+    letter-spacing: 1.6px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    display: flex;
+   justify-content: center;
+    bottom: 6%;
+    
+    }
+    .logo{
+      position: fixed;
+      top: 0.6rem;
+      left: 0.6rem;
+      width: 9rem;
+      position: absolute;
+      img {
+        width: 100%;
+      }
+    }
+    
     .connectBtn {
       top: unset;
-      right: unset;
-      left: 50%;
-      bottom: 1rem;
-      transform: translateX(-50%);
+      // right: unset;
+      top:1rem;
+      right: 0.5rem;
+      // bottom: 20rem;
+      
+      
+      
+      // left: 50%;
+      
+      // transform: translateX(-50%);
       &:hover {
         transform: translateX(-50%) skewX(-10deg);
       }

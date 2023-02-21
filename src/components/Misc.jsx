@@ -8,7 +8,7 @@ const Misc = () => {
     <a href="/" className='logo' >
         <img src={logo} alt="logo" />
     </a>
-    <a href="https://www.linkedin.com/in/shubhamdubey671" target="_blank"  rel="noreferrer" className='connectBtn'>
+    <a href="https://linktr.ee/Stupendousshubham?utm_source=linktree_profile_share&ltsid=5426e7f9-0226-47b6-a128-0ad1e94c5642" target="_blank"  rel="noreferrer" className='connectBtn'>
         LET'S CONNECT!
     </a>
     <BsMouse className="scrollBtn" />

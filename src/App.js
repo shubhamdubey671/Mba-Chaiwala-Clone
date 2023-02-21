@@ -80,7 +80,7 @@ function App() {
       />
       {/* Franchise */}
       <Section
-        h3={franchise.heading}
+        h3 ={franchise.heading }
         text={franchise.text}
         btnTxt={franchise.btn}
         imgSrc={franchiseImg}

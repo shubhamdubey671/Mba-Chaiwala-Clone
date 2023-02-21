@@ -121,8 +121,14 @@ const Footer = () => {
         </div>
      
 
-        <p>© COPYRIGHT 2022 MBA CHAIWALA. MADE BY SHUBHAM DUBEY
+        <p className="lastLine">© COPYRIGHT 2022 MBA CHAIWALA. 
+        <br></br>
+                
         </p>
+        <a href="https://linktr.ee/Stupendousshubham?utm_source=linktree_profile_share&ltsid=5426e7f9-0226-47b6-a128-0ad1e94c5642">
+        <p className="credit" > MADE BY SHUBHAM DUBEY</p>
+        </a>
+       
           
       </footer>
       <div className="footer"></div>
