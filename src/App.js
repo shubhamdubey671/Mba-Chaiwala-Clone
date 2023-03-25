@@ -2,6 +2,7 @@ import IntroVideo from "./components/IntroVideo";
 import Section from "./components/Section";
 import Footer from "./components/Footer";
 import Misc from "./components/Misc";
+import Loader from "./components/Loader.jsx";
 import data from "./data/data.json";
 
 import freshTopicImg from "./assets/academy.png";
@@ -21,6 +22,7 @@ import "./styles/section.scss";
 import "./styles/footer.scss";
 import "./styles/misc.scss";
 import "./styles/mediaquery.scss";
+import { useEffect ,useState } from "react";
 
 const yellow = "#fff100",
   pink = "#ed1e79",
@@ -40,8 +42,40 @@ function App() {
     barat,
     chaiwala,
   } = data;
+  const [loading, setLoading] = useState(true);
+
+const dotCursor =(e)=>{
+  const cursor=document.querySelector(".cursor")
+  cursor.style.top=`${e.pageY-14}px`
+  cursor.style.left=`${e.pageX-14}px`
+
+   const element = e.target;
+
+    if (element.getAttribute("data-cursorpointer")) {
+      cursor.classList.add("cursorHover");
+    } else if (element.getAttribute("data-cursorpointermini")) {
+      cursor.classList.add("cursorHoverMini");
+    } else {
+      cursor.classList.remove("cursorHover");
+      cursor.classList.remove("cursorHoverMini");
+    }
+}
+
+useEffect(()=>{
+  window.addEventListener("mousemove",dotCursor)
+  setTimeout(() => {
+    setLoading(false);
+  }, 3000);
+
+  return()=>{
+    window.removeEventListener("mousemove",dotCursor)
+  }
+},[])
+
+
   return (
     <>  
+    {loading && <Loader />}
     <IntroVideo />
     <Section
         h3={freshTopic.heading}

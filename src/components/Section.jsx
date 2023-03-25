@@ -73,7 +73,7 @@ const Section = ({
             color: headingColor,
           }}
           data-cursorpointer={true}
-          {...headingOptions}
+          {...headingOptions} 
         >
           {h3  }
         </motion.h3>

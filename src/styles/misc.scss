@@ -1,5 +1,28 @@
 @import "color";
 
+
+.cursor{
+  width: 26px;
+  height: 26px;
+  border: 2px solid $red;
+  border-radius: 50%;
+  position: absolute;
+  transition: trasform 0.3s;
+  z-index: 12;
+  pointer-events: none;
+}
+
+.cursorHover{
+  transform: scale(3);
+  border: none;
+  box-shadow: 0 0 10px $red;
+}
+.cursorHoverMini{
+  transform: scale(0.5);
+  border: none;
+  box-shadow: 0 0 20px $red;
+}
+
 .logo {
   position: fixed;
   top: 2rem;
